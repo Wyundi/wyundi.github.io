@@ -186,8 +186,6 @@ h(x) = g(\theta^Tx) = sigmoid(z)
 $$
 
 
-
-
 训练集共包含540个样本，将x1和x2合并成一个 (540, 2) 的矩阵，并使用随机数初始化参数w和b，然后计算h：
 
 ```python
@@ -292,8 +290,7 @@ $$
 \theta := \theta - \alpha\frac{\partial}{\partial \theta}{J(\theta)}
 $$
 
-
-}*
+*}*
 
 
 
@@ -308,8 +305,7 @@ $$
 \theta := \theta - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h_\theta(x^i) - y^i]x^i\}
 $$
 
-
-}*
+*}*
 
 
 
@@ -329,9 +325,7 @@ $$
 
 
 
-*repeat until convergence {*	
-
-​				
+*repeat until convergence {*		
 $$
 w := w - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h(x^i) - y^i]x^i\}
 $$
@@ -339,8 +333,6 @@ $$
 $$
 b := b - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}[h(x^i) - y^i]
 $$
-
-
 
 *}*
 
