@@ -160,13 +160,32 @@ $$
 
 为简化计算量，可以将x1x2和w1w2分别组合成矩阵，然后通过numpy进行运算。
 
-<div align=center>
 
-![Screenshot from 2019-03-15 11-21-00](/images/MachineLearning2_LogisticRegression/Screenshot from 2019-03-15 11-21-00.png)
+$$
+z(x) = w^Tx + b = 
+ \left[
+ \begin{matrix}
+   x_{11} & x_{21}\\
+   x_{12} & x_{22}\\
+   \vdots & \vdots\\
+   x_{1m} & x_{2m}
+  \end{matrix}
+  \right]
+=
+ \left[
+ \begin{matrix}
+   w_1\\
+   w_2\\
+ \end{matrix}
+ \right]
++ b
+$$
 
-</div>
+$$
+h(x) = g(\theta^Tx) = sigmoid(z)
+$$
 
-<br />
+
 
 
 训练集共包含540个样本，将x1和x2合并成一个 (540, 2) 的矩阵，并使用随机数初始化参数w和b，然后计算h：
@@ -267,10 +286,14 @@ J = 1/m * np.sum(Loss)
 
 
 *repeat until convergence {*
+
+
 $$
 \theta := \theta - \alpha\frac{\partial}{\partial \theta}{J(\theta)}
 $$
-*}*
+
+
+}*
 
 
 
@@ -279,10 +302,14 @@ $$
 
 
 *repeat until convergence {*
+
+
 $$
 \theta := \theta - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h_\theta(x^i) - y^i]x^i\}
 $$
-*}*
+
+
+}*
 
 
 
@@ -302,7 +329,9 @@ $$
 
 
 
-*repeat until convergence {*					
+*repeat until convergence {*	
+
+​				
 $$
 w := w - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h(x^i) - y^i]x^i\}
 $$
@@ -310,6 +339,8 @@ $$
 $$
 b := b - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}[h(x^i) - y^i]
 $$
+
+
 
 *}*
 
