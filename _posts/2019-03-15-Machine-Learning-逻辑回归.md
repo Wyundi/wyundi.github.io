@@ -287,14 +287,14 @@ J = 1/m * np.sum(Loss)
 
 
 
-*repeat until convergence {*
+repeat until convergence {
 
 
 $$
 \theta := \theta - \alpha\frac{\partial}{\partial \theta}{J(\theta)}
 $$
 
-*}*
+}
 
 
 
@@ -302,14 +302,14 @@ $$
 
 
 
-*repeat until convergence {*
+repeat until convergence {
 
 
 $$
 \theta := \theta - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h_\theta(x^i) - y^i]x^i\}
 $$
 
-*}*
+}
 
 
 
@@ -329,7 +329,7 @@ $$
 
 
 
-*repeat until convergence {*
+repeat until convergence {
 $$
 w := w - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h(x^i) - y^i]x^i\}
 $$
@@ -338,7 +338,7 @@ $$
 b := b - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}[h(x^i) - y^i]
 $$
 
-*}*
+}
 
 注意：先完成计算然后同步更新所有参数。
 
