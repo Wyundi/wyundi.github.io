@@ -1,16 +1,59 @@
-A [Jekyll](https://jekyllrb.com/) blog template made for simple, readable snippets of your brain drippings.
+flex
+====
 
-[DEMO](http://adueck.github.io/cayman-blog/)
+Flex is a responsive, flexible, [Jekyll](http://jekyllrb.com) theme.
 
-To get this going follow these simple steps:
+The theme is based on the website [The Development](http://thedevelopment.co).
 
-1. Fork, clone, or download the repository
-2. Edit <code>_config.yml</code>
-3. If you want, swap `img/cover.jpg` for your own header image
-3. Fill up the `_posts` folder with whatever you want to say
-4. run <code>jekyll build</code> and then <code>jekyll serve</code>  
-note: This will require the `jekyll-paginate` gem `$ gem install jekyll-paginate`
+View a demo website [here](http://the-development.github.io/flex/).
 
-You can easily host your blog for free on [GitHub Pages](https://pages.github.com/)
+Installation
+===
+To use this theme, you would do so like any other Jekyll setup:
 
-I made this Jekyll theme by adapting and modifying the [Cayman Theme](https://github.com/jasonlong/cayman-theme) by [Jason Lang](https://github.com/jasonlong), which is licensed under a [Creative Commons Attribution 4.0 International license](http://creativecommons.org/licenses/by/4.0/).
+1. Install Jekyll: `gem install jekyll`
+2. Fork this repository to your machine
+3. `cd` to the forked directory and run `jekyll serve --watch`
+4. Celebrate and dance.
+
+Contributions
+===
+
+In general, there are no strict rules for contributing, only that your code is clean and well structured.
+
+For bugs:
+- To merge a fix, you can simply open a pull request.
+- To report one that is not yet fixed, open an issue.
+
+Feature requests:
+- **Always** open an issue first before implementing and proposing a new feature. This is only so I can make sure the theme doesn't become bloated with too many features. This way, I can determine if an idea is something that makes sense for the theme's design.
+
+If in doubt, you can always ask me on Twitter: [@jeffxmn](https://twitter.com/jeffxmn)
+
+License
+===
+
+Flex is licensed under the MIT license:
+
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2014 Jeff Martin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

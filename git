@@ -1,5 +1,3 @@
 git add .
 git commit -m "markdown"
 git push origin master
-echo "Wyundi"
-echo "Wangyundi3357"
