@@ -62,13 +62,21 @@ from sklearn.model_selection import train_test_split	# sklearn中的数据分割
 
 
 给定数据集D={(x1, y1), (x2, y2), ... }，我们试图从此数据集中学习得到一个线性模型，这个模型尽可能准确地反应x(i)和y(i)的对应关系。这里的线性模型，就是属性(x)的线性组合的函数，可表示为：
+
+
 $$
 f(x) = w_1x_1 + w_2x_2 + ... + w_nx_n + b
 $$
+
+
 向量表示为：
+
+
 $$
 f(x) = W^TX + b
 $$
+
+
 其中，W是由(w1, w2, ..., wn)组成的列向量，表示weight，即权重，b表示bias，即偏差。
 
 
@@ -244,9 +252,13 @@ plt.plot(x, h, color = 'red')
 
 
 定义每一个样本的预测结果与真实值之间的偏差的表达式为损失函数（Loss Function），所有损失函数的和为代价函数（Cost Function）。当Cost Function接近最小值，我们就可以认为函数预测的结果已经接近真实值。在线性回归中，使用最小二乘法来定义其损失函数：
+
+
 $$
 Loss = [h(x^i) - y^i]^2
 $$
+
+
 Cost Function是所有Loss的和：
 $$
 J = \frac{1}{2m}\sum\limits_{i = 1}^{m} Loss = \frac{1}{2m}\sum\limits_{i = 1}^{m} [h(x^i) - y^i]^2
@@ -269,13 +281,21 @@ J = 1/(2*m) * np.sum(np.power((h - y), 2))
 #### **梯度下降（Gradient Descent）**
 
 结合预测函数h和代价函数J，我们可以得到以下表达式：
+
+
 $$
 J = \frac{1}{2m}\sum\limits_{i = 1}^{m} [h(x^i) - y^i]^2 = \frac{1}{2m}\sum\limits_{i = 1}^{m} [wx^i + b - y^i]^2
 $$
+
+
 先简化上式，假设b = 0，则该表达式就变成了：
+
+
 $$
 J = \frac{1}{2m}\sum\limits_{i = 1}^{m} [wx^i - y^i]^2
 $$
+
+
 可以看出，现在J的大小只受w的影响。设w为自变量J为因变量，可画出以下图像：
 
 ```python
@@ -298,10 +318,14 @@ w = np.random.rand(1, 1)
 
 
 *repeat until convergence {*
+
+
 $$
 \theta := \theta - \alpha\frac{\partial}{\partial \theta}{J(\theta)}
 $$
-*}*
+
+
+}*
 
 
 
@@ -325,6 +349,8 @@ $$
 所以梯度下降的过程为：
 
 *repeat until convergence {*					
+
+
 $$
 w := w - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h(x^i) - y^i]x^i\}
 $$
