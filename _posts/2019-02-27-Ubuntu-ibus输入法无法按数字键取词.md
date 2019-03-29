@@ -1,9 +1,13 @@
 ---
-title: 'Ubuntu ibus输入法无法按数字键取词'
+title: 'Ubuntu相关问题'
 date: 2019-02-27 01:58:22
 tags:
   -Ubuntu
 ---
+
+
+
+Ubuntu ibus输入法无法按数字键取词问题解决方法。
 
 
 
