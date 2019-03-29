@@ -324,8 +324,6 @@ $$
 
 
 repeat until convergence {
-
-
 $$
 w := w - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h(x^i) - y^i]x^i\}
 $$
