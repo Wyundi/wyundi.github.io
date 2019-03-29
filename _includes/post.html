@@ -1,24 +1,16 @@
-<div class="content" id="home">
-  <div id="sidebar-button">
-    <img src="/images/sidebar-button.png">
-  </div>
-  <div id="post-info">
-    <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/{{ page.cover }}">
-    </div>
-    <div id="info-container">
-      <h1 id="title">{{ page.title }}</h1>
-      <span id="date">{{ page.date | date_to_string }}</span>
-    </div>
-  </div>
 
-  <div class="post">
-    {{ content }}
-  </div>
-  <div class="colophon">
-    <p>
-      <span id="pub-date">Published on {{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
-      <span id="social">Find me on <a href="">Twitter</a>!</span>
-    </p>
+<div id="posts" class="posts-expand">
+  {% assign post = page %}
+  {% include _macro/post.html %}
+  <div class="post-spread">
+    {% if site.jiathis %}
+      {% include _partials/share/jiathis.html %}
+    {% elsif site.baidushare %}
+      {% include _partials/share/baidushare.html %}
+    {% elsif site.add_this_id %}
+      {% include _partials/share/add-this.html %}
+    {% elsif site.duoshuo_shortname and site.duoshuo_share %}
+      {% include _partials/share/duoshuo_share.html %}
+    {% endif %}
   </div>
 </div>
