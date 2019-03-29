@@ -258,11 +258,14 @@ $$
 Loss = [h(x^i) - y^i]^2
 $$
 
-
 Cost Function是所有Loss的和：
+
+
 $$
 J = \frac{1}{2m}\sum\limits_{i = 1}^{m} Loss = \frac{1}{2m}\sum\limits_{i = 1}^{m} [h(x^i) - y^i]^2
 $$
+
+
 式中m是样本数量。当J接近0的时候，h(x) 近似等于 y，可以认为该函数的预测值接近真实值。1/2m的作用是简化后面的求导运算。
 
 ```python
@@ -324,8 +327,7 @@ $$
 \theta := \theta - \alpha\frac{\partial}{\partial \theta}{J(\theta)}
 $$
 
-
-}*
+*}*
 
 
 
@@ -338,6 +340,8 @@ $$
 
 
 最小二乘法的代价函数的导数可以化简为如下形式：
+
+
 $$
 \frac{\partial}{\partial w}{J(w)} = \frac{1}{m}\sum\limits_{i = 1}^{m}\{[h(x^i) - y^i]x^i\}
 $$
@@ -346,10 +350,15 @@ $$
 \frac{\partial}{\partial b}{J(b)} = \frac{1}{m}\sum\limits_{i = 1}^{m}[h(x^i) - y^i]
 $$
 
+
+
 所以梯度下降的过程为：
 
-*repeat until convergence {*					
 
+
+*repeat until convergence {*			
+
+​		
 
 $$
 w := w - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}\{[h(x^i) - y^i]x^i\}
@@ -359,7 +368,11 @@ $$
 b := b - \alpha\frac{1}{m}\sum\limits_{i = 1}^{m}[h(x^i) - y^i]
 $$
 
-*}*
+
+
+}*
+
+
 
 由于更新参数会导致h发生变化，从而影响后面参数的更新过程，所以需要先完成计算然后同步更新所有参数。
 
