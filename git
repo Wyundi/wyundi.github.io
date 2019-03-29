@@ -1,5 +1,5 @@
 git add .
 git commit -m "markdown"
-git push origin master <<EOF
-Wyundi Wangyundi3357
-EOF
+git push origin master
+echo "Wyundi"
+echo "Wangyundi3357"
