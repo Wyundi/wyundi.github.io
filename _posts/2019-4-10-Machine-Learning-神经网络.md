@@ -394,6 +394,8 @@ $$
 
 
 相对应的，公式也应该变为如下形式以和其维度相匹配：
+
+
 $$
 (X, \theta^{[1]}) \Rightarrow z^{[1]} = XW^{[1]} + b^{[1]T}\Rightarrow \alpha^{[1]} = \sigma(z^{[1]})
 $$
@@ -409,6 +411,8 @@ $$
 $$
 (\sigma(z^{[l-1]}, \theta^{[l]}) \Rightarrow z^{[l]} = \sigma^{[l]}W^{[l]} + b^{[l]T}\Rightarrow \alpha^{[l]} = \sigma(z^{[l]})
 $$
+
+
 
 数据维度如下：
 
