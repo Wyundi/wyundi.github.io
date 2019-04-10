@@ -2,7 +2,7 @@
 title: Shadowsocks（二）：客户端配置
 date: 2019-02-23 00:48:22
 tags:
-  -Shadowsocks
+  - Shadowsocks
 ---
 
 

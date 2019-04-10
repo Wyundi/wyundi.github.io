@@ -2,7 +2,7 @@
 title: Shadowsocks（一）：基于Vultr搭建SS服务器
 date: 2019-02-22 19:26:39
 tags:
-  -Shadowsocks
+  - Shadowsocks
 ---
 
 

@@ -2,7 +2,7 @@
 title: 'Ubuntu相关问题'
 date: 2019-02-27 01:58:22
 tags:
-  -Ubuntu
+  - Ubuntu
 ---
 
 

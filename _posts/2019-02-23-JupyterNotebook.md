@@ -2,7 +2,7 @@
 title: 'Jupyter notebook'
 date: 2019-02-23 17:10:53
 tags:
-  -JupyterNotebook
+  - JupyterNotebook
 ---
 
 
