@@ -802,19 +802,42 @@ $$
 
 
 
-我们需要优化 $\theta$ 使得 $L(\theta)$ 尽可能接近1，所以定义损失函数如下：
+我们需要优化 $\theta$ 使得 $L(\theta)$ 尽可能接近1。即最大化似然。
+
+
+
+另一种解释最大似然估计的观点是将它看作最小化经验分布（即真实情况下数据分布，$p_{data}$）和模型分布（即预测的分布，$p_{model}​$）之间的差异，两者之间的差异程度可以通过KL散度度量。定义如下：
 
 
 $$
-Loss(\theta) = -log(L(\theta)) = -\sum\limits_{i = 1}^{m}log(P(x^{(i)} | \theta))
+D_{KL}(p_{data}||p_{model}) = \frac{1}{m}\sum\limits_{i = 1}^{m} [log(p_{data}(x^{(i)})) - log(p_{model}(x^{(i)}))]
 $$
 
 
-以上即为交叉熵。
+$p_{data}$ 表示真实情况下的数据分布概论，与模型无关。这意味着当训练模型最小化KL散度时，我们只需要最小化：
+
+
+$$
+-\frac{1}{m}\sum\limits_{i = 1}^{m} [log(p_{model}(x^{(i)}))]
+$$
+
+
+所以定义损失函数如下：
 
 
 
-为了让结果更趋向于实际值，取：
+$$
+Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}[log(P(x^{(i)} | \theta))]
+$$
+
+
+
+最小化KL散度其实就是在最小化分布之间的交叉熵。
+
+
+
+实际计算时，为简化计算过程，取：
+
 
 
 $$
@@ -826,27 +849,18 @@ h_\theta(x_j) & \text{if}\ y_k = 1 \\
 $$
 
 
+
 则：
 
 
+
 $$
-Loss(\theta) = -\sum\limits_{i = 1}^{m}log(P(x^{(i)} | \theta)) = -\sum\limits_{i = 1}^{m}\sum\limits_{k = 1}^{n}[y_klog(h_{\theta}(x_k^{(i)})]
+Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}log(P(x^{(i)} | \theta)) = -\frac{1}{m}\sum\limits_{i = 1}^{m}\sum\limits_{k = 1}^{n}[y_klog(h_{\theta}(x_k^{(i)})]
 $$
 
 
 
 可以看出，逻辑回归中的对数损失函数是交叉熵取 $n = 2$ 即只有两个分类时的特例。
-
-
-
-使用交叉熵作为多分类神经网络的代价函数：
-
-
-$$
-J(\theta) = \frac{1}{m}Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}\sum\limits_{k = 1}^{n}[y_klog(h_{\theta}(x_k^{(i)})]
-$$
-
-
 
 
 
