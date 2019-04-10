@@ -188,7 +188,7 @@ h(x) = g(\theta^Tx) = sigmoid(z)
 $$
 
 
-训练集共包含540个样本，将x1和x2合并成一个 (540, 2) 的矩阵，并使用随机数初始化参数w和b，然后计算h：
+训练集共包含540个样本，将x1和x2合并成一个 (540, 2) 的矩阵，并使用随机数初始化参数w和b，然后计算h，并取m作为样本个数：
 
 ```python
 x = np.column_stack((x1, x2))
@@ -196,6 +196,7 @@ w = np.random.rand(2, 1)
 b = np.random.rand(1, 1)
 z = np.dot(x, w) + b
 h = sigmoid(z)
+m = x.shape[0]
 ```
 
 
@@ -360,8 +361,8 @@ while(True):
     
     # CostFunction
     J0 = J
-    Cost = - y*(np.log(h)) - (1-y)*(np.log(1-h))
-    J = 1/m * np.sum(Cost)
+    Loss = - y*(np.log(h)) - (1-y)*(np.log(1-h))
+    J = 1/m * np.sum(Loss)
     J_dv = abs(J0 - J)
     
     # Derivative
