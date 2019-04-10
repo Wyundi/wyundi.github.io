@@ -1,7 +1,7 @@
 ---
 title: 'Machine Learning: 神经网络'
 date: 2019-04-10 10:54:00
-tag:
+tags:
   - 机器学习
   - 神经网络
 ---
