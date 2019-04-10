@@ -564,7 +564,6 @@ $$
 S_i = \frac{e^{z_i}}{\sum\limits_{j = 1}^n e^{z_j}}
 $$
 
-
 **示意图如下：**
 
 
@@ -885,6 +884,7 @@ $$
 前向传播过程如下：
 
 
+
 $$
 (X, \theta^{[1]}) \Rightarrow z^{[1]} = XW^{[1]} + b^{[1]T}\Rightarrow \alpha^{[1]} = \sigma(z^{[1]})
 $$
@@ -907,11 +907,71 @@ $$
 
 
 
-使用代价函数计算预测值和真实值之间的差距。
+使用代价函数计算预测值和真实值之间的差距，代价函数表示为 $J(\theta)​$。
 
 
 
-[...未完待续]
+则用链式法则计算反向传播过程如下：
 
 
+
+计算梯度：
+
+
+$$
+\frac{\partial J(\theta)}{\partial z^{[l]}} = \frac{\partial J(\theta)}{\partial \sigma(z^{[l]})} \frac{\partial \sigma(z^{[l]})}{\partial z^{[l]}}
+$$
+
+$$
+\frac{\partial J(\theta)}{\partial \theta^{[l]}} = \frac{\partial J(\theta)}{\partial z^{[l]}} \frac{\partial z^{[l]}}{\partial \theta^{[l]}}
+$$
+
+
+
+
+$$
+\frac{\partial J(\theta)}{\partial z^{[l - 1]}} = \frac{\partial J(\theta)}{\partial z^{[l]}} \frac{\partial z^{[l]}}{\partial \sigma(z^{[l - 1]})} \frac{\partial \sigma(z^{[l - 1]})}{\partial z^{[l - 1]}}
+$$
+
+$$
+\frac{\partial J(\theta)}{\partial \theta^{[l - 1]}} = \frac{\partial J(\theta)}{\partial z^{[l - 1]}} \frac{\partial z^{[l - 1]}}{\partial \theta^{[l]}}
+$$
+
+
+$$
+\vdots
+$$
+
+$$
+\frac{\partial J(\theta)}{\partial z^{[1]}} = \frac{\partial J(\theta)}{\partial z^{[2]}} \frac{\partial z^{[2]}}{\partial \sigma(z^{[1]})} \frac{\partial \sigma(z^{[1]})}{\partial z^{[1]}}
+$$
+
+$$
+\frac{\partial J(\theta)}{\partial \theta^{[1]}} = \frac{\partial J(\theta)}{\partial z^{[1]}} \frac{\partial z^{[1]}}{\partial \theta^{[1]}}
+$$
+
+
+
+完成全部梯度的计算以后更新参数：
+
+
+$$
+\theta^{[l]} := \theta^{[l]} - \alpha \frac{\partial J(\theta)}{\partial \theta^{[l]}}
+$$
+
+$$
+\theta^{[l - 1]} := \theta^{[l - 1]} - \alpha \frac{\partial J(\theta)}{\partial \theta^{[l - 1]}}
+$$
+
+$$
+\vdots
+$$
+
+$$
+\theta^{[1]} := \theta^{[1]} - \alpha \frac{\partial J(\theta)}{\partial \theta^{[1]}}
+$$
+
+
+
+其中，所有数据的导数的维度和数据自身的维度相同。
 
