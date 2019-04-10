@@ -105,7 +105,7 @@ $$
 
 
 
-![bg2017071202](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/bg2017071202.png)
+![bg2017071202](/images/MachineLearning3_NeuralNetwork/bg2017071202.png)
 
 
 
@@ -117,7 +117,7 @@ $$
 
 
 
-![bg2017071205](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/bg2017071205.png)
+![bg2017071205](/images/MachineLearning3_NeuralNetwork/bg2017071205.png)
 
 
 
@@ -139,7 +139,7 @@ $$
 
 
 
-![Screenshot from 2019-03-26 15-27-37](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/Screenshot from 2019-03-26 15-27-37.png)
+![Screenshot from 2019-03-26 15-27-37](/images/MachineLearning3_NeuralNetwork/Screenshot from 2019-03-26 15-27-37.png)
 
 
 
@@ -160,7 +160,7 @@ $$
 input = x_1, x_2 \in \{0, 1\} \\
 output = x_1 \  AND \  x_2
 $$
-![Screenshot from 2019-03-26 18-02-57](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/Screenshot from 2019-03-26 18-02-57.png)
+![Screenshot from 2019-03-26 18-02-57](/images/MachineLearning3_NeuralNetwork/Screenshot from 2019-03-26 18-02-57.png)
 
 
 
@@ -209,7 +209,7 @@ $$
 
 
 
-![Screenshot from 2019-03-26 18-55-32](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/Screenshot from 2019-03-26 18-55-32.png)
+![Screenshot from 2019-03-26 18-55-32](/images/MachineLearning3_NeuralNetwork/Screenshot from 2019-03-26 18-55-32.png)
 
 
 
@@ -227,7 +227,7 @@ $$
 
 
 
-![Screenshot from 2019-03-26 15-27-37](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/Screenshot from 2019-03-26 15-27-37.png)
+![Screenshot from 2019-03-26 15-27-37](/images/MachineLearning3_NeuralNetwork/Screenshot from 2019-03-26 15-27-37.png)
 
 
 
@@ -308,7 +308,7 @@ $$
 
 
 
-![Screenshot from 2019-03-26 15-06-27](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/Screenshot%20from%202019-03-26%2015-06-27.png)
+![Screenshot from 2019-03-26 15-06-27](/images/MachineLearning3_NeuralNetwork/Screenshot%20from%202019-03-26%2015-06-27.png)
 
 
 
@@ -425,7 +425,7 @@ $$
 
 
 
-![sigmoid](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/sigmoid.png)
+![sigmoid](/images/MachineLearning3_NeuralNetwork/sigmoid.png)
 
 
 
@@ -452,7 +452,7 @@ $$
 $$
 **图像：**
 
-![tanh](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/tanh.png)
+![tanh](/images/MachineLearning3_NeuralNetwork/tanh.png)
 
 
 
@@ -472,7 +472,7 @@ $$
 $$
 图像：
 
-![ReLU](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/ReLU.png)
+![ReLU](/images/MachineLearning3_NeuralNetwork/ReLU.png)
 
 
 
@@ -494,7 +494,7 @@ $$
 
 图像：
 
-![LeakyReLU](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/LeakyReLU.png)
+![LeakyReLU](/images/MachineLearning3_NeuralNetwork/LeakyReLU.png)
 
 
 
@@ -512,7 +512,7 @@ $$
 
 
 
-![softmax](/home/wyundi/Project/Git/Website/wyundi.github.io/images/MachineLearning3_NeuralNetwork/softmax.jpg)
+![softmax](/images/MachineLearning3_NeuralNetwork/softmax.jpg)
 
 
 
