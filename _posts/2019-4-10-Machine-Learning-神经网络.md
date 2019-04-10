@@ -901,38 +901,3 @@ $$
 
 
 
-
-
-使用在前向传播过程中构建的神经网络：
-
-
-
-> 设数据中共有$m$个样本，每个样本有$n^{[0]}$个特征。建立一个 $l$ 层的神经网络。每一层的特征数（神经元个数）用$n$表示，即为 $(n^{[1]}, n^{[2]}, ..., n^{[l]})$。
-
-
-
-前向传播过程如下：
-
-
-$$
-(X, \theta^{[1]}) \Rightarrow z^{[1]} = XW^{[1]} + b^{[1]T}\Rightarrow \alpha^{[1]} = \sigma(z^{[1]})
-$$
-
-$$
-(\sigma(z^{[1]}, \theta^{[2]}) \Rightarrow z^{[2]} = \sigma^{[2]}W^{[2]} + b^{[2]T}\Rightarrow \alpha^{[2]} = \sigma(z^{[2]})
-$$
-
-$$
-\vdots
-$$
-
-$$
-(\sigma(z^{[l-1]}, \theta^{[l]}) \Rightarrow z^{[l]} = \sigma^{[l]}W^{[l]} + b^{[l]T}\Rightarrow \alpha^{[l]} = \sigma(z^{[l]})
-$$
-
-
-
-以 $X$ 作为输入数据，$\sigma(z^{[l]})$即为最后的预测值。
-
-
-
