@@ -366,13 +366,11 @@ while(True):
     J_dv = abs(J0 - J)
     
     # Derivative
-    dw1 = 1/m * np.sum((h - y) * x[:, 0].reshape(-1, 1))
-    dw2 = 1/m * np.sum((h - y) * x[:, 1].reshape(-1, 1))
-    db = 1/m * np.sum(h - y)
-    
+    dw = 1/m * np.sum(((h - y) * x), axis = 0).reshape(-1, 1)
+    db = 1/m * np.sum((h - y))
+
     # ParamUpdate
-    w[0] = w[0] - alpha * dw1
-    w[1] = w[1] - alpha * dw2
+    w = w - alpha * dw
     b = b - alpha * db
     
     print(J)
