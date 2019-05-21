@@ -796,7 +796,7 @@ $$
 
 
 
-为便于计算，用 $log$ 函数将最大似然估计中的累乘转化为求和：
+为便于计算，用 $log​$ 函数将最大似然估计中的累乘转化为求和：
 
 
 $$
@@ -809,7 +809,7 @@ $$
 
 
 
-我们需要优化 $\theta$ 使得 $L(\theta)$ 尽可能接近1。即最大化似然。
+我们需要优化 $\theta$ 使得 $L(\theta)​$ 尽可能接近1。即最大化似然。
 
 
 
@@ -817,7 +817,7 @@ $$
 
 
 $$
-D_{KL}(p_{data}||p_{model}) = \frac{1}{m}\sum\limits_{i = 1}^{m} [log(p_{data}(x^{(i)})) - log(p_{model}(x^{(i)}))]
+D_{KL}(p_{data}||p_{model}) = \frac{1}{m}\sum\limits_{i = 1}^{m} \{ p_{data}(x^{(i)}) [log(p_{data}(x^{(i)})) - log(p_{model}(x^{(i)}))] \}
 $$
 
 
@@ -825,7 +825,7 @@ $p_{data}$ 表示真实情况下的数据分布概论，与模型无关。这意
 
 
 $$
--\frac{1}{m}\sum\limits_{i = 1}^{m} [log(p_{model}(x^{(i)}))]
+-\frac{1}{m}\sum\limits_{i = 1}^{m} [p_{data}(x^{(i)}) log(p_{model}(x^{(i)}))]
 $$
 
 
@@ -834,7 +834,7 @@ $$
 
 
 $$
-Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}[log(P(x^{(i)} | \theta))]
+Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}[y^{(i)}log(P(x^{(i)} | \theta))]
 $$
 
 
@@ -862,7 +862,7 @@ $$
 
 
 $$
-Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}log(P(x^{(i)} | \theta)) = -\frac{1}{m}\sum\limits_{i = 1}^{m}\sum\limits_{k = 1}^{n}[y_klog(h_{\theta}(x_k^{(i)})]
+Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}[y^{(i)}log(P(x^{(i)} | \theta))] = -\frac{1}{m}\sum\limits_{i = 1}^{m}\sum\limits_{k = 1}^{n}[y_klog(h_{\theta}(x_k^{(i)})]
 $$
 
 
