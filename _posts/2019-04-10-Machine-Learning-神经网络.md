@@ -862,7 +862,7 @@ $$
 
 
 $$
-Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}[y^{(i)}log(P(x^{(i)} | \theta))] = -\frac{1}{m}\sum\limits_{i = 1}^{m}\sum\limits_{k = 1}^{n}[y_klog(h_{\theta}(x_k^{(i)})]
+Loss(\theta) = -\frac{1}{m}\sum\limits_{i = 1}^{m}[y^{(i)}log(P(x^{(i)} | \theta))] = -\frac{1}{m}\sum\limits_{i = 1}^{m}\sum\limits_{k = 1}^{n}[y^{(i)}_klog(h_{\theta}(x_k^{(i)})]
 $$
 
 
