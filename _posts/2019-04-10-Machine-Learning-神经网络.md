@@ -851,7 +851,7 @@ $$
 P(x^{(i)} | \theta) = 
 \begin{cases}
 h_\theta(x_j) & \text{if}\ y_k = 1 \\
-0 & \text{if}\ y_k = 0 
+1 - h_\theta(x_j) & \text{if}\ y_k = 0 
 \end{cases}
 $$
 
