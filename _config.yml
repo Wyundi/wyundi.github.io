@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: Wyundi & LPP's Blog
+title: Wyundi's Blog
 subtitle:
 description:
-author: Wyundi & LPP
+author: Wyundi
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
@@ -264,9 +264,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  #display: post
   #display: always
-  #display: hide
+  display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
