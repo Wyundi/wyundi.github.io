@@ -11,8 +11,6 @@ Ubuntu环境下使用Shadowsocks科学上网。使用Vultr服务器搭建SS服�
 
 
 
-# **Shadowsocks（二）：客户端配置**
-
 
 
 

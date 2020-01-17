@@ -11,8 +11,6 @@ Jupyter Notebook 相关问题。
 
 
 
-## Jupyter notebook Error: ''create_prompt_application''
-
 
 
 将prompt-toolkit版本降至1.0.15即可

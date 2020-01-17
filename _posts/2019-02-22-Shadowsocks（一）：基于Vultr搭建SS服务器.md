@@ -11,10 +11,6 @@ Ubuntu环境下使用Shadowsocks科学上网。使用Vultr服务器搭建SS服�
 
 
 
-# **Shadowsocks（一）：基于Vultr搭建SS服务器**
-
-
-
 
 
 注：本机操作系统为 Ubuntu 18.04， 图中所示服务器仅为测试用例，将在结束后销毁。
