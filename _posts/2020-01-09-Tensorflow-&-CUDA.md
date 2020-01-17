@@ -15,8 +15,6 @@ TensorFlow及对应的CUDA版本问题
 
 
 
-# Tensorflow & CUDA
-
 
 
 **参考：**
@@ -69,6 +67,7 @@ $ sudo pip uninstall tensorflow
 > Installation Instructions:
 >
 > 	1. Run `sudo sh cuda_10.0.130_410.48_linux.run`
+>
 >  	2. Follow the command-line prompts
 
 
