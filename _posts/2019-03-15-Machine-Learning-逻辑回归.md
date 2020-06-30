@@ -89,7 +89,7 @@ data_y = cancer.target
 
 
 
-乳腺癌数据集一共包括30个特征，target是诊断结果，即是否患有乳腺癌。将数据分为训练及和测试集，选择第1个特征和第27个特征作为因变量，target作为自变量。
+乳腺癌数据集一共包括30个特征，target是诊断结果，即是否患有乳腺癌。将数据分为训练及和测试集，选择第1个特征和第27个特征作为自变量，target作为因变量。
 
 ```python
 x_train, x_test, y_train, y_test = train_test_split(data_X, data_y, test_size = 0.05)
